@@ -46,7 +46,7 @@
     MercadoPago\SDK::setAccessToken("APP_USR-8208253118659647-112521-dd670f3fd6aa9147df51117701a
     2082e-677408439"); // Either Production or SandBox AccessToken
 
-    $payment = new MercadoPago\Payment(); var_dump($payment); die();
+    $payment = new MercadoPago\Payment();  echo $payment->status; die();
     
     $payment->transaction_amount = 141;
     $payment->token = "YOUR_CARD_TOKEN";
